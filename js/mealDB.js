@@ -14,7 +14,6 @@ const searchFood = () => {
   }
 };
 const displaySearchResults = (meals) => {
-  console.log(meals);
   const searchResult = document.getElementById('search-result');
   // clear loaded content
   searchResult.textContent = '';
@@ -41,7 +40,6 @@ const displaySearchResults = (meals) => {
     searchResult.appendChild(div);
   } else {
     meals.forEach((meal) => {
-      console.log(meal);
       const div = document.createElement('div');
       div.classList.add('col');
       div.innerHTML = `
