@@ -1,6 +1,7 @@
 const searchFood = () => {
   const searchField = document.getElementById('search-field');
   const searchText = searchField.value;
+  document.getElementById('spinner').style.display = 'block';
   // clear search box
   searchField.value = '';
   if (searchText == '') {
@@ -60,4 +61,5 @@ const displaySearchResults = (meals) => {
       searchResult.appendChild(div);
     });
   }
+  document.getElementById('spinner').style.display = 'none';
 };
